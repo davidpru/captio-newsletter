@@ -1,0 +1,212 @@
+<mjml>
+
+  <mj-head>
+
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-all>
+      <mj-text 
+        font-weight="400" 
+        font-size="16px"
+        line-height="24px"
+        color="#5B636D" 
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+      </mj-text>
+      
+      <mj-class 
+        name="h2" 
+        font-weight="bold" 
+        font-size="20px" 
+        line-height="30px" 
+        color="#323C49"
+        margin-top="0"
+        />
+
+      <mj-class 
+        name="h3" 
+        font-weight="bold" 
+        font-size="26px" 
+        line-height="36px" 
+        color="#fff"
+        margin-top="0"
+        />
+
+      <mj-class 
+        name="bg-gris" 
+        background-color="#F0F0F0"
+        border-radius="16px"
+        />
+
+      <mj-class 
+        name="bg-amarillo" 
+        background-color="#F9BA14"
+        border-radius="16px"
+        color="#fff"
+        />
+
+      <mj-class 
+        name="bg-azul" 
+        background-color="#2798C0"
+        border-radius="16px"
+        color="#fff"
+        />
+
+      <mj-class 
+        name="bg-dark" 
+        background-color="#323C49"
+        border-radius="16px"
+        color="#fff"
+        />
+
+      <mj-class 
+        name="radius-top" 
+        border-radius="16px 16px 0 0"
+        />
+
+      <mj-class 
+        name="radius-bottom" 
+        border-radius="16px 16px 0 0"
+        />
+
+      <mj-class 
+        name="boton-azul" 
+        border-radius="50px"
+        height="22px"
+        color="#fff"
+        background-color="#2798C0"
+        font-size="14px"
+        align="left"
+        border="2px solid #2798C0"
+        />
+
+      <mj-class 
+        name="boton-blanco-outline" 
+        border-radius="50px"
+        height="22px"
+        color="#fff"
+        font-size="14px"
+        background-color=""
+        align="left"
+        border="2px solid #fff"
+        />
+
+    </mj-attributes>
+
+  </mj-head>
+
+  <mj-body background-color="#fff">
+
+
+    <mj-section width="600px">
+
+      <mj-column width="600px">
+        <mj-image src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-header.jpg" width="128px" height="auto">
+      </mj-column>
+      <mj-spacer height="50px" />
+      <mj-column width="600px" padding="0">
+        <mj-text align="center" mj-class="h2" padding="0">
+          Hola Patricia, estas son las noticias y los artículos más leídos del blog de Captio del mes de octubre. ¡Descúbrelos!
+        </mj-text>
+      </mj-column>
+      <mj-spacer height="50px" />
+    </mj-section>
+
+    <mj-section mj-class="bg-gris" padding="0">
+      <mj-group>
+        <mj-column width="100%">
+          <mj-image mj-class="radius-top"
+                    width="600px" 
+                    height="" 
+                    padding="0"
+                    src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
+          </mj-column>
+          <mj-column width="100%" padding="40px">
+            <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
+            <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
+          
+            <mj-button mj-class="boton-azul" href="#">
+              Leer el artículo
+            </mj-button>
+          </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-spacer height="32px" />
+
+    <mj-section mj-class="bg-amarillo" padding="40px">
+        <mj-column>
+          <mj-text mj-class="h3">Captio es el software que automatiza la gestión de tus gastos de viaje. </mj-text>
+          <mj-button mj-class="boton-blanco-outline" href="#">
+            Descubre como
+          </mj-button>
+        </mj-column>
+        <mj-column>
+          <mj-image mj-class="radius-top"
+            width="600px" 
+            height="" 
+            padding="0"
+            src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo.jpg" />
+        </mj-column>
+    </mj-section>
+
+    <mj-spacer height="32px" />
+
+
+    <mj-section mj-class="bg-azul" padding="40px">
+        <mj-column width="100%" >
+          <mj-text mj-class="h3" align="center">¿Te ha parecido <br> interesante?</mj-text>
+          <mj-text align="center" color="#fff">¡Compártelo!</mj-text>
+              <mj-spacer height="20px" />
+        </mj-column>
+
+        <mj-group padding="0">
+          <mj-column padding="0">
+            <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-twitter.jpg" />
+          </mj-column>
+          <mj-column padding="0">
+            <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-facebook.jpg" />
+          </mj-column>
+          <mj-column padding="0">
+            <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-linkedin.jpg" />
+          </mj-column>  
+          <mj-column padding="0">
+            <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-email.jpg" />
+          </mj-column>  
+        </mj-group>
+        <mj-spacer height="20px" />
+    </mj-section>
+
+    <mj-spacer height="32px" />
+
+
+
+    <mj-section mj-class="bg-dark" padding="40px">
+      <mj-column>
+
+        <mj-image align="left" 
+        src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-footer.jpg" 
+        width="128px" height="auto" href="https://www.captio.net/" />
+
+
+        <mj-text align="" color="#fff" font-size="14px">
+          Torre Inbisa, Plaça Europa nº 9 planta 7 a L'Hospitalet de Llobregat,  Barcelona 08908 España  
+        </mj-text>
+
+        <mj-text align="" color="#fff" font-size="14px" color="#C1C4C8">
+          <a href="" style="color: #C1C4C8">Actualizar preferencias</a> |    
+          <a href="" style="color: #C1C4C8">Quiero subscribirme</a> |    
+          <a href="" style="color: #C1C4C8">Cancelar subscripción</a>
+        </mj-text>
+
+
+      </mj-column>
+    </mj-section>
+
+    <mj-spacer height="32px" />
+
+
+
+
+
+
+  </mj-body>
+</mjml>
