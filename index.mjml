@@ -96,18 +96,9 @@
 
       <mj-class 
         name="pad-40" 
-        padding="40px"
+        padding="30px 20px"
         />
     </mj-attributes>
-
-
-    <mj-style>
-      @media (max-width: 575px) {
-        .pad-40 table tbody tr td {
-          padding: 25px !important;
-        }
-      }
-    </mj-style>
 
 
   </mj-head>
@@ -153,7 +144,7 @@
   <mj-spacer height="32px" />
 
 
-  <mj-section mj-class="bg-amarillo pad-40" css-class="pad-40">
+  <mj-section mj-class="bg-amarillo pad-40">
     <mj-column>
       <mj-text mj-class="h3">Captio es el software que automatiza la gestión de tus gastos de viaje. </mj-text>
       <mj-button mj-class="boton-blanco-outline" href="#">
@@ -173,40 +164,45 @@
   <mj-spacer height="32px" />
 
 
-  <mj-section mj-class="bg-azul pad-40" css-class="pad-40">
-      <mj-column width="100%" >
-        <mj-text mj-class="h3" align="center">¿Te ha parecido <br> interesante?</mj-text>
-        <mj-text align="center" font-size="14px" color="#fff">¡Compártelo!</mj-text>
-        <mj-spacer height="20px" />
-      </mj-column>
+  <mj-section mj-class="bg-azul pad-40">
 
-      <mj-group padding="0">
-        <mj-column padding="0">
-          <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-twitter.jpg" />
-        </mj-column>
-        <mj-column padding="0">
-          <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-facebook.jpg" />
-        </mj-column>
-        <mj-column padding="0">
-          <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-linkedin.jpg" />
-        </mj-column>  
-        <mj-column padding="0">
-          <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-email.jpg" />
-        </mj-column>  
-      </mj-group>
-      <mj-spacer height="20px" />
+    <mj-column width="100%" padding="0">
+      <mj-text mj-class="h3" align="center">¿Te ha parecido <br> interesante?</mj-text>
+      <mj-text align="center" font-size="14px" color="#fff">¡Compártelo!</mj-text>
+
+    </mj-column>
+
+    <mj-group padding="0">
+      <mj-text align="center">
+        <a href="#" style="margin: 0 5px">
+          <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-twitter.jpg" />
+        </a>
+        <a href="#" style="margin: 0 5px">
+          <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-facebook.jpg" />
+        </a> 
+        <a href="#" style="margin: 0 5px">
+          <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-linkedin.jpg" />
+        </a>
+        <a href="#" style="margin: 0 5px">
+          <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-email.jpg" />
+        </a> 
+      </mj-text>
+    </mj-group>
+
+
+    <mj-spacer height="20px" />
   </mj-section>
 
 
   <mj-spacer height="32px" />
 
 
-  <mj-section mj-class="bg-dark pad-40" css-class="pad-40">
+  <mj-section mj-class="bg-dark pad-40">
     <mj-column>
 
       <mj-image align="left" 
       src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-footer.jpg" 
-      width="128px" height="auto" href="https://www.captio.net/" />
+      width="128px" height="auto" href="https://www.captio.net/"/>
 
       <mj-text align="" color="#fff" font-size="14px">
         Torre Inbisa, Plaça Europa nº 9 planta 7 a L'Hospitalet de Llobregat,  Barcelona 08908 España  
