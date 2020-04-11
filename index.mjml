@@ -200,15 +200,22 @@
   <mj-section mj-class="bg-dark pad-40">
     <mj-column>
 
-      <mj-image align="left" 
-      src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-footer.jpg" 
-      width="128px" height="auto" href="https://www.captio.net/"/>
+      <mj-image 
+        align="left" 
+        src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-footer.jpg" 
+        width="128px" 
+        height="auto" 
+        href="https://www.captio.net/"/>
 
       <mj-text align="" color="#fff" font-size="14px">
         Torre Inbisa, Plaça Europa nº 9 planta 7 a L'Hospitalet de Llobregat,  Barcelona 08908 España  
       </mj-text>
 
-      <mj-text align="" color="#fff" font-size="13px" color="#C1C4C8">
+      <mj-text 
+      align="" 
+      color="#fff" 
+      font-size="13px" 
+      color="#C1C4C8">
         <a href="" style="color: #C1C4C8; text-decoration: none;">Actualizar preferencias</a> |    
         <a href="" style="color: #C1C4C8; text-decoration: none;">Quiero subscribirme</a> |    
         <a href="" style="color: #C1C4C8; text-decoration: none;">Cancelar subscripción</a>
