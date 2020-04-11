@@ -89,124 +89,143 @@
         border="2px solid #fff"
         />
 
+      <mj-class 
+        name="margin-resp" 
+        margin="0 15px"
+        />
+
+      <mj-class 
+        name="pad-40" 
+        padding="40px"
+        />
     </mj-attributes>
+
+
+    <mj-style>
+      @media (max-width: 575px) {
+        .pad-40 table tbody tr td {
+          padding: 25px !important;
+        }
+      }
+    </mj-style>
+
 
   </mj-head>
 
-  <mj-body background-color="#fff">
+<mj-body background-color="#fff" width="640px">
+<mj-wrapper border="1px dotted red" padding="0 20px">
 
+  <mj-section width="100%">
 
-    <mj-section width="600px">
+    <mj-column width="100%">
+      <mj-image src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-header.jpg" width="128px" height="auto">
+    </mj-column>
+    <mj-spacer height="50px" />
+    <mj-column padding="0" width="100%">
+      <mj-text align="center" mj-class="h2" padding="0">
+        Hola Patricia, estas son las noticias y los artículos más leídos del blog de Captio del mes de octubre. ¡Descúbrelos!
+      </mj-text>
+    </mj-column>
+    <mj-spacer height="50px" />
+  </mj-section>
 
-      <mj-column width="600px">
-        <mj-image src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-header.jpg" width="128px" height="auto">
-      </mj-column>
-      <mj-spacer height="50px" />
-      <mj-column width="600px" padding="0">
-        <mj-text align="center" mj-class="h2" padding="0">
-          Hola Patricia, estas son las noticias y los artículos más leídos del blog de Captio del mes de octubre. ¡Descúbrelos!
-        </mj-text>
-      </mj-column>
-      <mj-spacer height="50px" />
-    </mj-section>
-
-    <mj-section mj-class="bg-gris" padding="0">
-      <mj-group>
-        <mj-column width="100%">
-          <mj-image mj-class="radius-top"
-                    width="600px" 
-                    height="" 
-                    padding="0"
-                    src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
-          </mj-column>
-          <mj-column width="100%" padding="40px">
-            <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
-            <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
-          
-            <mj-button mj-class="boton-azul" href="#">
-              Leer el artículo
-            </mj-button>
-          </mj-column>
-      </mj-group>
-    </mj-section>
-
-    <mj-spacer height="32px" />
-
-    <mj-section mj-class="bg-amarillo" padding="40px">
-        <mj-column>
-          <mj-text mj-class="h3">Captio es el software que automatiza la gestión de tus gastos de viaje. </mj-text>
-          <mj-button mj-class="boton-blanco-outline" href="#">
-            Descubre como
+  <mj-section mj-class="bg-gris" padding="0">
+    <mj-group>
+      <mj-column width="100%">
+        <mj-image mj-class="radius-top"
+                  width="600px" 
+                  height="" 
+                  padding="0"
+                  src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
+        </mj-column>
+        <mj-column width="100%" mj-class="pad-40">
+          <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
+          <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
+        
+          <mj-button mj-class="boton-azul" href="#">
+            Leer el artículo
           </mj-button>
         </mj-column>
-        <mj-column>
-          <mj-image mj-class="radius-top"
-            width="600px" 
-            height="" 
-            padding="0"
-            src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo.jpg" />
-        </mj-column>
-    </mj-section>
-
-    <mj-spacer height="32px" />
+    </mj-group>
+  </mj-section>
 
 
-    <mj-section mj-class="bg-azul" padding="40px">
-        <mj-column width="100%" >
-          <mj-text mj-class="h3" align="center">¿Te ha parecido <br> interesante?</mj-text>
-          <mj-text align="center" color="#fff">¡Compártelo!</mj-text>
-              <mj-spacer height="20px" />
-        </mj-column>
+  <mj-spacer height="32px" />
 
-        <mj-group padding="0">
-          <mj-column padding="0">
-            <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-twitter.jpg" />
-          </mj-column>
-          <mj-column padding="0">
-            <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-facebook.jpg" />
-          </mj-column>
-          <mj-column padding="0">
-            <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-linkedin.jpg" />
-          </mj-column>  
-          <mj-column padding="0">
-            <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-email.jpg" />
-          </mj-column>  
-        </mj-group>
+
+  <mj-section mj-class="bg-amarillo pad-40" css-class="pad-40">
+    <mj-column>
+      <mj-text mj-class="h3">Captio es el software que automatiza la gestión de tus gastos de viaje. </mj-text>
+      <mj-button mj-class="boton-blanco-outline" href="#">
+        Descubre como
+      </mj-button>
+    </mj-column>
+    <mj-column>
+      <mj-image mj-class="radius-top"
+        width="600px" 
+        height="" 
+        padding="0"
+        src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo.jpg" />
+    </mj-column>
+  </mj-section>
+
+
+  <mj-spacer height="32px" />
+
+
+  <mj-section mj-class="bg-azul pad-40" css-class="pad-40">
+      <mj-column width="100%" >
+        <mj-text mj-class="h3" align="center">¿Te ha parecido <br> interesante?</mj-text>
+        <mj-text align="center" font-size="14px" color="#fff">¡Compártelo!</mj-text>
         <mj-spacer height="20px" />
-    </mj-section>
-
-    <mj-spacer height="32px" />
-
-
-
-    <mj-section mj-class="bg-dark" padding="40px">
-      <mj-column>
-
-        <mj-image align="left" 
-        src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-footer.jpg" 
-        width="128px" height="auto" href="https://www.captio.net/" />
-
-
-        <mj-text align="" color="#fff" font-size="14px">
-          Torre Inbisa, Plaça Europa nº 9 planta 7 a L'Hospitalet de Llobregat,  Barcelona 08908 España  
-        </mj-text>
-
-        <mj-text align="" color="#fff" font-size="14px" color="#C1C4C8">
-          <a href="" style="color: #C1C4C8">Actualizar preferencias</a> |    
-          <a href="" style="color: #C1C4C8">Quiero subscribirme</a> |    
-          <a href="" style="color: #C1C4C8">Cancelar subscripción</a>
-        </mj-text>
-
-
       </mj-column>
-    </mj-section>
 
-    <mj-spacer height="32px" />
+      <mj-group padding="0">
+        <mj-column padding="0">
+          <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-twitter.jpg" />
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-facebook.jpg" />
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-linkedin.jpg" />
+        </mj-column>  
+        <mj-column padding="0">
+          <mj-image width="32px" href="https://mjml.io/" padding="0" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-email.jpg" />
+        </mj-column>  
+      </mj-group>
+      <mj-spacer height="20px" />
+  </mj-section>
 
 
+  <mj-spacer height="32px" />
 
 
+  <mj-section mj-class="bg-dark pad-40" css-class="pad-40">
+    <mj-column>
+
+      <mj-image align="left" 
+      src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-footer.jpg" 
+      width="128px" height="auto" href="https://www.captio.net/" />
+
+      <mj-text align="" color="#fff" font-size="14px">
+        Torre Inbisa, Plaça Europa nº 9 planta 7 a L'Hospitalet de Llobregat,  Barcelona 08908 España  
+      </mj-text>
+
+      <mj-text align="" color="#fff" font-size="13px" color="#C1C4C8">
+        <a href="" style="color: #C1C4C8; text-decoration: none;">Actualizar preferencias</a> |    
+        <a href="" style="color: #C1C4C8; text-decoration: none;">Quiero subscribirme</a> |    
+        <a href="" style="color: #C1C4C8; text-decoration: none;">Cancelar subscripción</a>
+      </mj-text>
+
+    </mj-column>
+  </mj-section>
 
 
-  </mj-body>
+  <mj-spacer height="32px" />
+
+
+</mj-wrapper>
+</mj-body>
+
 </mjml>
