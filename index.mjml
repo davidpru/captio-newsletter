@@ -179,16 +179,16 @@
 
     <mj-group padding="0">
       <mj-text align="center">
-        <a href="#" style="margin: 0 5px">
+        <a href="#" style="margin: 0 5px; text-decoration: none;">
           <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-twitter.jpg" />
         </a>
-        <a href="#" style="margin: 0 5px">
+        <a href="#" style="margin: 0 5px; text-decoration: none;">
           <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-facebook.jpg" />
         </a> 
-        <a href="#" style="margin: 0 5px">
+        <a href="#" style="margin: 0 5px; text-decoration: none;">
           <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-linkedin.jpg" />
         </a>
-        <a href="#" style="margin: 0 5px">
+        <a href="#" style="margin: 0 5px; text-decoration: none;">
           <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-email.jpg" />
         </a> 
       </mj-text>
