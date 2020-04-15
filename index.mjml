@@ -96,7 +96,7 @@
 
       <mj-class 
         name="pad-40" 
-        padding="30px 20px"
+        padding="30px 10px"
         />
     </mj-attributes>
 
@@ -113,16 +113,17 @@
 
   <mj-section width="100%">
 
-    <mj-column width="100%">
-      <mj-image src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-header.jpg" width="128px" height="auto">
+    <mj-column width="100%" padding="0" margin="0">
+      <mj-spacer height="15px" />
+      <mj-image padding="0" margin="0"align="left" src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-header.jpg" width="128px" height="auto">
     </mj-column>
     <mj-spacer height="50px" />
     <mj-column padding="0" width="100%">
-      <mj-text align="center" mj-class="h2" padding="0">
-        Hola <span class="capitalize">patricia</span>, estas son las noticias y los artículos más leídos del blog de Captio del mes de octubre. ¡Descúbrelos!
+      <mj-text align="" mj-class="h2" padding="0">
+        Hola <span class="capitalize">patricia</span>,<br> estas son las noticias y los artículos más leídos del blog de Captio del mes de octubre. ¡Descúbrelos!
       </mj-text>
     </mj-column>
-    <mj-spacer height="50px" />
+    <mj-spacer height="30px" />
   </mj-section>
 
   <mj-section mj-class="bg-gris" padding="0">
