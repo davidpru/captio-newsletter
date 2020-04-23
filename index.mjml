@@ -172,13 +172,13 @@
 
 
   <mj-section mj-class="bg-amarillo pad-40">
-    <mj-column>
+    <mj-column width="60%">
       <mj-text mj-class="h3">Captio es el software que automatiza la gestión de tus gastos de viaje. </mj-text>
       <mj-button mj-class="boton-blanco-outline" href="#">
         Descubre como
       </mj-button>
     </mj-column>
-    <mj-column>
+    <mj-column  width="40%">
       <mj-image mj-class="radius-top"
         width="600px" 
         height="" 
@@ -214,15 +214,15 @@
 
 
   <mj-section mj-class="bg-dark pad-40">
-    <mj-column>
+    <mj-column width="60%"> 
       <mj-text mj-class="h3">Consulta todos nuestros webinars y eventos virtuales aquí. </mj-text>
       <mj-button mj-class="boton-blanco-outline" href="#">
         Ver Eventos
       </mj-button>
     </mj-column>
-    <mj-column>
-      <mj-image mj-class="radius-top"
-        width="600px" 
+    <mj-column width="40%">
+      <mj-image
+        width="200px" 
         height="" 
         padding="0"
         src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-webinar.jpg" />
