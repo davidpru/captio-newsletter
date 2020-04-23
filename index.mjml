@@ -146,6 +146,27 @@
     </mj-group>
   </mj-section>
 
+  <mj-spacer height="32px" />
+
+  <mj-section mj-class="bg-gris" padding="0">
+    <mj-group>
+      <mj-column width="100%">
+        <mj-image mj-class="radius-top"
+                  width="600px" 
+                  height="" 
+                  padding="0"
+                  src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
+        </mj-column>
+        <mj-column width="100%" mj-class="pad-40">
+          <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
+          <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
+        
+          <mj-button mj-class="boton-azul" href="#">
+            Leer el artículo
+          </mj-button>
+        </mj-column>
+    </mj-group>
+  </mj-section>
 
   <mj-spacer height="32px" />
 
@@ -166,6 +187,69 @@
     </mj-column>
   </mj-section>
 
+  <mj-spacer height="32px" />
+
+
+  <mj-section mj-class="bg-gris" padding="0">
+    <mj-group>
+      <mj-column width="100%">
+        <mj-image mj-class="radius-top"
+                  width="600px" 
+                  height="" 
+                  padding="0"
+                  src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
+        </mj-column>
+        <mj-column width="100%" mj-class="pad-40">
+          <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
+          <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
+        
+          <mj-button mj-class="boton-azul" href="#">
+            Leer el artículo
+          </mj-button>
+        </mj-column>
+    </mj-group>
+  </mj-section>
+
+  <mj-spacer height="32px" />
+
+
+  <mj-section mj-class="bg-dark pad-40">
+    <mj-column>
+      <mj-text mj-class="h3">Consulta todos nuestros webinars y eventos virtuales aquí. </mj-text>
+      <mj-button mj-class="boton-blanco-outline" href="#">
+        Ver Eventos
+      </mj-button>
+    </mj-column>
+    <mj-column>
+      <mj-image mj-class="radius-top"
+        width="600px" 
+        height="" 
+        padding="0"
+        src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-webinar.jpg" />
+    </mj-column>
+  </mj-section>
+
+  <mj-spacer height="32px" />
+
+  <mj-section mj-class="bg-gris" padding="0">
+    <mj-group>
+      <mj-column width="100%">
+        <mj-image mj-class="radius-top"
+                  width="600px" 
+                  height="" 
+                  padding="0"
+                  src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
+        </mj-column>
+        <mj-column width="100%" mj-class="pad-40">
+          <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
+          <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
+        
+          <mj-button mj-class="boton-azul" href="#">
+            Leer el artículo
+          </mj-button>
+        </mj-column>
+    </mj-group>
+  </mj-section>
 
   <mj-spacer height="32px" />
 
