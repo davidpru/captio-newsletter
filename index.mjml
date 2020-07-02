@@ -24,7 +24,7 @@
       <mj-class 
         name="h3" 
         font-weight="bold" 
-        font-size="24px" 
+        font-size="23px" 
         line-height="36px" 
         color="#fff"
         margin-top="0"
@@ -33,7 +33,6 @@
       <mj-class 
         name="bg-gris" 
         background-color="#F0F0F0"
-        border-radius="16px"
         overflow="hidden"
         />
 
@@ -54,8 +53,8 @@
       <mj-class 
         name="bg-dark" 
         background-color="#323C49"
-        border-radius="16px"
         color="#fff"
+        border-radius="16px"
         />
 
       <mj-class 
@@ -70,13 +69,14 @@
 
       <mj-class 
         name="radius-bottom" 
-        border-radius="16px 16px 0 0"
+        border-radius="0 0 16px 16px "
         />
 
       <mj-class 
         name="boton-azul" 
         border-radius="50px"
         height="22px"
+        width="auto"
         color="#fff"
         background-color="#2798C0"
         font-size="14px"
@@ -104,6 +104,11 @@
         name="pad-40" 
         padding="30px 10px"
         />
+
+      <mj-class 
+        name="space" 
+        padding-top="30px"
+        />
     </mj-attributes>
 
     <mj-style inline="inline">
@@ -113,77 +118,152 @@
       table {
         overflow: hidden;
       }
+      .share-email a { display: inline-block !important; }
     </mj-style>
+
+
+
 
   </mj-head>
 
 <mj-body background-color="#fff" width="640px">
-<mj-wrapper border="1px dotted red" padding="0 20px">
 
-  <mj-section width="100%">
-    <mj-column width="100%" padding="0" margin="0">
-      <mj-spacer height="15px" />
-      <mj-image padding="0" margin="0"align="left" src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-header.jpg" width="128px" height="auto">
-    </mj-column>
-    <mj-spacer height="50px" />
+
+<mj-raw>
+
+<div id="preview_text" style="display:none;font-size:1px;color:{{background_color}};line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">{% text "preview_text" label="Preview Text", value="", no_wrapper=True %}</div>
+
+
+{% text "b1_titulo", label="Noticia 1, Título", value="Aquí pondremos el título del post, que puede ser largo en algunas ocasiones",
+  export_to_template_context=True %}
+{% text "b1_link", label="Noticia 1, Link", value="#", export_to_template_context=True %}
+{% textarea "b1_textarea", label="Noticia 1, Entrada", value="Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias…", export_to_template_context=True %}
+{% image "b1_imagen" label='Noticia1, Imagen', src='http://cdn2.hubspot.net/hub/428357/file-2117441560-jpg/img/dev-bg-compressed.jpg', export_to_template_context=True %}
+
+
+
+{% text "b2_titulo", label="Noticia 2, Título", value="Aquí pondremos el título del post, que puede ser largo en algunas ocasiones",
+  export_to_template_context=True %}
+{% text "b2_link", label="Noticia 2, Link", value="#", export_to_template_context=True %}
+{% textarea "b2_textarea", label="Noticia 2, Entrada", value="Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias…", export_to_template_context=True %}
+{% image "b2_imagen" label='Noticia2, Imagen', src='http://cdn2.hubspot.net/hub/428357/file-2117441560-jpg/img/dev-bg-compressed.jpg', export_to_template_context=True %}
+
+
+
+{% text "b3_titulo", label="Noticia 3, Título", value="Aquí pondremos el título del post, que puede ser largo en algunas ocasiones",
+  export_to_template_context=True %}
+{% text "b3_link", label="Noticia 3, Link", value="#", export_to_template_context=True %}
+{% textarea "b3_textarea", label="Noticia 3, Entrada", value="Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias…", export_to_template_context=True %}
+{% image "b3_imagen" label='Noticia3, Imagen', src='http://cdn2.hubspot.net/hub/428357/file-2117441560-jpg/img/dev-bg-compressed.jpg', export_to_template_context=True %}
+
+
+
+{% text "b4_titulo", label="Noticia 4, Título", value="Aquí pondremos el título del post, que puede ser largo en algunas ocasiones",
+  export_to_template_context=True %}
+{% text "b4_link", label="Noticia 4, Link", value="#", export_to_template_context=True %}
+{% textarea "b4_textarea", label="Noticia 4, Entrada", value="Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias…", export_to_template_context=True %}
+{% image "b4_imagen" label='Noticia4, Imagen', src='http://cdn2.hubspot.net/hub/428357/file-2117441560-jpg/img/dev-bg-compressed.jpg', export_to_template_context=True %}
+
+
+
+
+</mj-raw>
+
+
+
+
+
+<mj-wrapper border="0px dotted red" padding="0 10px">
+
+  <mj-section>
+    <mj-group>
+      <mj-column width="100%" padding="0" margin="0">
+        <mj-spacer height="15px" />
+        <mj-image padding="0" margin="0"align="left" src="https://www.captio.net/hubfs/_assets/newsletter/blog/logo-header.jpg" width="128px" height="auto"> 
+      </mj-column>
+      <mj-spacer height="25px" />
+    </mj-group>
+  </mj-section>
+
+  <mj-section>      
     <mj-column padding="0" width="100%">
       <mj-text mj-class="h2" padding="0">
-        Hola <span class="capitalize">{{ contact.firstname }}</span>,<br> estas son las noticias y los artículos más leídos del blog de Captio del mes de octubre. ¡Descúbrelos!
+
+
+<mj-raw>
+{% widget_block rich_text "Introducción" overrideable=True, label='Right Column'  %}
+  {% widget_attribute "html" %}
+
+    Hola <span class="capitalize">{{ contact.firstname }}</span>, <br> 
+    estas son las noticias y los artículos más leídos del blog de Captio del mes de octubre. ¡Descúbrelos!
+
+  {% end_widget_attribute %}
+{% end_widget_block %}
+</mj-raw>
+
+
       </mj-text>
+      <mj-spacer height="30px" />
     </mj-column>
-    <mj-spacer height="30px" />
   </mj-section>
 
-  <mj-section mj-class="bg-gris" padding="0">
-    <mj-group>
-      <mj-column width="100%">
-        <mj-image mj-class="radius-top"
-                  width="600px" 
-                  height="" 
-                  padding="0"
-                  src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
-        </mj-column>
-        <mj-column width="100%" mj-class="pad-40">
-          <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
-          <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
-        
-          <mj-button mj-class="boton-azul" href="#">
-            Leer el artículo
-          </mj-button>
-        </mj-column>
-    </mj-group>
+
+
+  <mj-section mj-class="bg-gris radius-top" padding="0">
+    <mj-column width="100%">
+      <mj-image mj-class="radius-top"
+                width="690px" 
+                padding="0"
+                src="{{ content.widgets.b1_imagen.body.src }}" />
+    </mj-column>
+  </mj-section>
+  <mj-section mj-class="bg-gris radius-bottom" padding="0">
+    <mj-column width="100%" mj-class="pad-40">
+      <mj-text mj-class="h2">{{ widget_data.b1_titulo.value }}</mj-text>
+      <mj-text>{{ widget_data.b1_textarea.value }}</mj-text>
+    
+      <mj-button mj-class="boton-azul" href="{{ widget_data.b1_link.value }}">
+        Leer el artículo
+      </mj-button>
+    </mj-column>
   </mj-section>
 
-  <mj-spacer height="32px" mj-class="bg-blanco" />
-
-  <mj-section mj-class="bg-gris" padding="0">
-    <mj-group>
-      <mj-column width="100%">
-        <mj-image mj-class="radius-top"
-                  width="600px" 
-                  height="" 
-                  padding="0"
-                  src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
-        </mj-column>
-        <mj-column width="100%" mj-class="pad-40">
-          <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
-          <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
-        
-          <mj-button mj-class="boton-azul" href="#">
-            Leer el artículo
-          </mj-button>
-        </mj-column>
-    </mj-group>
+  <mj-section mj-class="space" padding="0">
   </mj-section>
 
-  <mj-spacer height="32px" mj-class="bg-blanco"/>
+
+  <mj-section mj-class="bg-gris radius-top" padding="0">
+    <mj-column width="100%">
+      <mj-image mj-class="radius-top"
+                width="690px" 
+                padding="0"
+                src="{{ content.widgets.b2_imagen.body.src }}" />
+    </mj-column>
+  </mj-section>
+  <mj-section mj-class="bg-gris radius-bottom" padding="0">
+    <mj-column width="100%" mj-class="pad-40">
+      <mj-text mj-class="h2">{{ widget_data.b2_titulo.value }}</mj-text>
+      <mj-text>{{ widget_data.b2_textarea.value }}</mj-text>
+    
+      <mj-button mj-class="boton-azul" href="{{ widget_data.b2_link.value }}">
+        Leer el artículo
+      </mj-button>
+    </mj-column>
+  </mj-section>
+
+  <mj-section mj-class="space" padding="0">
+  </mj-section>
 
 
-  <mj-section mj-class="bg-amarillo pad-40">
-    <mj-column width="60%">
+
+
+
+
+  <mj-section mj-class="bg-amarillo pad-40" vertical-align="middle">
+    <mj-column width="60%" vertical-align="middle">
       <mj-text mj-class="h3" align="center">Captio es el software que automatiza la gestión de tus gastos de viaje. </mj-text>
       <mj-button mj-class="boton-blanco-outline" align="center" href="https://www.captio.net/solicita-una-demostracion-de-captio">
-        Descubre como
+        Descubre cómo
       </mj-button>
     </mj-column>
     <mj-column  width="40%">
@@ -194,36 +274,38 @@
     </mj-column>
   </mj-section>
 
-  <mj-spacer height="32px" mj-class="bg-blanco"/>
 
-
-  <mj-section mj-class="bg-gris" padding="0">
-    <mj-group>
-      <mj-column width="100%">
-        <mj-image mj-class="radius-top"
-                  width="600px" 
-                  height="" 
-                  padding="0"
-                  src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
-        </mj-column>
-        <mj-column width="100%" mj-class="pad-40">
-          <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
-          <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
-        
-          <mj-button mj-class="boton-azul" href="#">
-            Leer el artículo
-          </mj-button>
-        </mj-column>
-    </mj-group>
+  <mj-section mj-class="space" padding="0">
   </mj-section>
 
-  <mj-spacer height="32px" mj-class="bg-blanco"/>
+
+  <mj-section mj-class="bg-gris radius-top" padding="0">
+    <mj-column width="100%">
+      <mj-image mj-class="radius-top"
+                width="690px" 
+                padding="0"
+                src="{{ content.widgets.b3_imagen.body.src }}" />
+    </mj-column>
+  </mj-section>
+  <mj-section mj-class="bg-gris radius-bottom" padding="0">
+    <mj-column width="100%" mj-class="pad-40">
+      <mj-text mj-class="h2">{{ widget_data.b3_titulo.value }}</mj-text>
+      <mj-text>{{ widget_data.b3_textarea.value }}</mj-text>
+    
+      <mj-button mj-class="boton-azul" href="{{ widget_data.b3_link.value }}">
+        Leer el artículo
+      </mj-button>
+    </mj-column>
+  </mj-section>
+
+  <mj-section mj-class="space" padding="0">
+  </mj-section>
 
 
   <mj-section mj-class="bg-dark pad-40">
     <mj-column width="60%"> 
       <mj-text mj-class="h3" align="center">Consulta todos nuestros webinars y eventos virtuales aquí. </mj-text>
-      <mj-button mj-class="boton-blanco-outline" align="center" href="https://www.captio.net/webinars">
+      <mj-button mj-class="boton-blanco-outline" align="center" href="https://www.captio.net/eventos-webinars">
         Ver Eventos
       </mj-button>
     </mj-column>
@@ -236,62 +318,86 @@
     </mj-column>
   </mj-section>
 
-  <mj-spacer height="32px" mj-class="bg-blanco"/>
 
-  <mj-section mj-class="bg-gris" padding="0">
-    <mj-group>
-      <mj-column width="100%">
-        <mj-image mj-class="radius-top"
-                  width="600px" 
-                  height="" 
-                  padding="0"
-                  src="https://www.captio.net/hubfs/_assets/newsletter/blog/img-demo-news.jpg" />
-        </mj-column>
-        <mj-column width="100%" mj-class="pad-40">
-          <mj-text mj-class="h2">Aquí pondremos el título del post, que puede ser largo en algunas ocasiones</mj-text>
-          <mj-text>Los apuntes contables que genera el pago del impuesto de sociedades pueden ser un poco liosos: liquidación del tributo, diferencias… </mj-text>
-        
-          <mj-button mj-class="boton-azul" href="#">
-            Leer el artículo
-          </mj-button>
-        </mj-column>
-    </mj-group>
+  <mj-section mj-class="space" padding="0">
   </mj-section>
 
-  <mj-spacer height="32px"  mj-class="bg-blanco"/>
 
 
-  <mj-section mj-class="bg-azul pad-40">
 
-    <mj-column width="100%" padding="0">
-      <mj-text mj-class="h3" align="center">¿Te ha parecido <br> interesante?</mj-text>
-      <mj-text align="center" font-size="14px" color="#fff">¡Compártelo!</mj-text>
 
+
+
+  <mj-section mj-class="bg-gris radius-top" padding="0">
+    <mj-column width="100%">
+      <mj-image mj-class="radius-top"
+                width="690px" 
+                padding="0"
+                src="{{ content.widgets.b4_imagen.body.src }}" />
     </mj-column>
+  </mj-section>
+  <mj-section mj-class="bg-gris radius-bottom" padding="0">
+    <mj-column width="100%" mj-class="pad-40">
+      <mj-text mj-class="h2">{{ widget_data.b4_titulo.value }}</mj-text>
+      <mj-text>{{ widget_data.b4_textarea.value }}</mj-text>
+    
+      <mj-button mj-class="boton-azul" href="{{ widget_data.b4_link.value }}">
+        Leer el artículo
+      </mj-button>
+    </mj-column>
+  </mj-section>
 
-    <mj-group padding="0">
-      <mj-text align="center">
-        <a href="#" style="margin: 0 5px; text-decoration: none;">
-          <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-twitter.jpg" />
-        </a>
-        <a href="#" style="margin: 0 5px; text-decoration: none;">
-          <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-facebook.jpg" />
-        </a> 
-        <a href="#" style="margin: 0 5px; text-decoration: none;">
-          <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-linkedin.jpg" />
-        </a>
-        <a href="#" style="margin: 0 5px; text-decoration: none;">
-          <img width="32px" src="https://www.captio.net/hubfs/_assets/newsletter/blog/ico-email.jpg" />
-        </a> 
-      </mj-text>
-    </mj-group>
-
-    <mj-spacer height="20px" mj-class="bg-blanco"/>
-
+  <mj-section mj-class="space" padding="0">
   </mj-section>
 
 
-  <mj-spacer height="32px" mj-class="bg-blanco" />
+
+
+
+
+
+
+<mj-section mj-class="bg-azul pad-40">
+  <mj-column width="100%" mj-class="">
+
+    <mj-text mj-class="h3" align="center">¿Te ha parecido <br> interesante? </mj-text>
+    <mj-text align="center" font-size="14px" color="#fff">¡Compártelo!</mj-text>
+
+    <mj-text align="center" css-class="share-email">
+      
+      <mj-raw >
+      {% widget_block social_sharing "my_social_sharing" label='Social Sharing', use_page_url=True, overrideable=True  %}
+        {% widget_attribute "pinterest" is_json=True %}{"custom_link_format": "", "pinterest_media": "http://cdn1.hubspot.com/hub/158015/305390_10100548508246879_837195_59275782_6882128_n.jpg", "enabled": false, "network": "pinterest", "img_src": "https://static.hubspot.com/final/img/common/icons/social/pinterest-24x24.png"}{% end_widget_attribute %}
+        {% widget_attribute "twitter" is_json=True %}{"custom_link_format": "", "enabled": true, "network": "twitter", "img_src": "https://www.captio.net/hubfs/_assets/newsletter/blog/ico-twitter.jpg"}{% end_widget_attribute %}
+        {% widget_attribute "linkedin" is_json=True %}{"custom_link_format": "", "enabled": true, "network": "linkedin", "img_src": "https://www.captio.net/hubfs/_assets/newsletter/blog/ico-linkedin.jpg"}{% end_widget_attribute %}
+        {% widget_attribute "facebook" is_json=True %}{"custom_link_format": "", "enabled": true, "network": "facebook", "img_src": "https://www.captio.net/hubfs/_assets/newsletter/blog/ico-facebook.jpg"}{% end_widget_attribute %}
+        {% widget_attribute "email" is_json=True %}{"custom_link_format": "", "enabled": true, "network": "email", "img_src": "https://www.captio.net/hubfs/_assets/newsletter/blog/ico-email.jpg"}{% end_widget_attribute %}
+      {% end_widget_block %}
+      </mj-raw>
+
+    </mj-text>
+
+  </mj-column>
+</mj-section>
+
+  <mj-section mj-class="space" padding="0">
+  </mj-section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <mj-section mj-class="bg-dark pad-40">
@@ -314,7 +420,7 @@
       font-size="13px" 
       color="#C1C4C8">
         <a href="{{ unsubscribe_link }}" style="color: #C1C4C8; text-decoration: none;">Actualizar preferencias</a> |    
-        <a href="" style="color: #C1C4C8; text-decoration: none;">Quiero subscribirme</a> |    
+        <a href="{{view_as_page_url}}" style="color: #C1C4C8; text-decoration: none;">Versión web</a> |    
         <a href="{{ unsubscribe_link }}" style="color: #C1C4C8; text-decoration: none;">Cancelar subscripción</a>
       </mj-text>
 
@@ -322,7 +428,10 @@
   </mj-section>
 
 
-  <mj-spacer height="32px" />
+  <mj-section mj-class="space" padding="0">
+  </mj-section>
+
+
 
 
 </mj-wrapper>
