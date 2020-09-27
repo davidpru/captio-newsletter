@@ -214,6 +214,7 @@
       <mj-image mj-class="radius-top"
                 width="690px" 
                 padding="0"
+                href="{{ widget_data.b1_link.value }}"
                 src="{{ content.widgets.b1_imagen.body.src }}" />
     </mj-column>
   </mj-section>
@@ -237,6 +238,7 @@
       <mj-image mj-class="radius-top"
                 width="690px" 
                 padding="0"
+                href="{{ widget_data.b2_link.value }}"
                 src="{{ content.widgets.b2_imagen.body.src }}" />
     </mj-column>
   </mj-section>
@@ -284,6 +286,7 @@
       <mj-image mj-class="radius-top"
                 width="690px" 
                 padding="0"
+                href="{{ widget_data.b3_link.value }}"
                 src="{{ content.widgets.b3_imagen.body.src }}" />
     </mj-column>
   </mj-section>
@@ -333,6 +336,7 @@
       <mj-image mj-class="radius-top"
                 width="690px" 
                 padding="0"
+                href="{{ widget_data.b4_link.value }}"
                 src="{{ content.widgets.b4_imagen.body.src }}" />
     </mj-column>
   </mj-section>
